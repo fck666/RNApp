@@ -5,7 +5,7 @@ export default class index extends Component {
   render() {
     return (
       <View>
-        <Text style = {[{fontSize: 30},{fontStyle: 'italic'}]}> textInComponent </Text>
+        <Text style = {[{fontSize: 30},{fontStyle: 'italic'},{color: 'green'}]}> textInComponent </Text>
         <Text style = {styles.h1}>Hello RN</Text>
         <Text style = {styles.h2}>Hello RN</Text>
       </View>

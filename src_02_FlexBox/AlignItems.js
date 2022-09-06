@@ -1,31 +1,38 @@
 import React, { Component } from 'react'
 import { Text, StyleSheet, View, ScrollView } from 'react-native'
 
-export default class FlexDriection extends Component {
+export default class AlignItems extends Component {
   render() {
     return (
-      <View>
+      <View style = {{height: '100%'}}>
         <Text style = {[styles.h2]}> 主轴方向 </Text>
       <ScrollView>
-        <Text style = {[styles.h3]}> flexDirection: 'column'(默认)</Text>
-        <View style = {[styles.container]}>
+      <Text style = {[styles.h3]}> flexDirection: 'row'</Text>
+        <View style = {[styles.container,styles.flexRow,styles.alignItemsStart]}>
           <Text style = {[styles.itemBase]}>111</Text>
           <Text style = {[styles.itemBase]}>222</Text>
           <Text style = {[styles.itemBase]}>333</Text>
         </View>
-        <Text style = {[styles.h3]}> flexDirection: 'column-reverse'</Text>
-        <View style = {[styles.container,styles.flexColumnReverse]}>
-          <Text style = {[styles.itemBase]}>111</Text>
-          <Text style = {[styles.itemBase]}>222</Text>
-          <Text style = {[styles.itemBase]}>333</Text>
-        </View><Text style = {[styles.h3]}> flexDirection: 'row'</Text>
-        <View style = {[styles.container,styles.flexRow]}>
+        <Text style = {[styles.h3]}> flexDirection: 'row'</Text>
+        <View style = {[styles.container,styles.flexRow,styles.alignItemsEnd]}>
           <Text style = {[styles.itemBase]}>111</Text>
           <Text style = {[styles.itemBase]}>222</Text>
           <Text style = {[styles.itemBase]}>333</Text>
         </View>
-        <Text style = {[styles.h3]}> flexDirection: 'row-reverse'</Text>
-        <View style = {[styles.container,styles.flexRowReverse]}>
+        <Text style = {[styles.h3]}> flexDirection: 'row'</Text>
+        <View style = {[styles.container,styles.flexRow,styles.alignItemsCenter]}>
+          <Text style = {[styles.itemBase]}>111</Text>
+          <Text style = {[styles.itemBase]}>222</Text>
+          <Text style = {[styles.itemBase]}>333</Text>
+        </View>
+        <Text style = {[styles.h3]}> flexDirection: 'row'</Text>
+        <View style = {[styles.container,styles.flexRow,styles.alignItemsBaseline]}>
+          <Text style = {[styles.itemBase,]}>刘备</Text>
+          <Text style = {[styles.itemBase,{fontSize: 60}]}>关羽</Text>
+          <Text style = {[styles.itemBase,{fontSize: 40}]}>张飞</Text>
+        </View>
+        <Text style = {[styles.h3]}> flexDirection: 'row'</Text>
+        <View style = {[styles.container,styles.flexRow,styles.alignItemsStretch]}>
           <Text style = {[styles.itemBase]}>111</Text>
           <Text style = {[styles.itemBase]}>222</Text>
           <Text style = {[styles.itemBase]}>333</Text>
@@ -53,7 +60,6 @@ const styles = StyleSheet.create({
       marginHorizontal:10
   },
   itemBase:{
-    height: 30,
     borderWidth: 1,
     borderColor: 'red',
     backgroundColor: '#dfb',
@@ -70,6 +76,21 @@ const styles = StyleSheet.create({
     flexDirection: 'row'
   },
   flexRowReverse:{
-     flexDirection: 'row-reverse'
+    flexDirection: 'row-reverse'
+  },
+  alignItemsStart:{
+    alignItems: 'flex-start'
+  },
+  alignItemsCenter:{
+    alignItems: 'center'
+  },
+  alignItemsEnd:{
+    alignItems: 'flex-end'
+  },
+  alignItemsBaseline:{
+    alignItems: 'baseline'
+  },
+  alignItemsStretch:{
+    alignItems: 'stretch'
   }
 })

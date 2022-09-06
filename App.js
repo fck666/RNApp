@@ -1,7 +1,9 @@
 import React, { Component } from 'react'
 import { StyleSheet, Text, View } from 'react-native';
-import Index from "./src_01_StyleSheet";
-
+// import Index from "./src_01_StyleSheet"; 
+// import Index from "./src_02_FlexBox/FlexDriection";
+// import Index from "./src_02_FlexBox/JustifyContent";
+import Index from "./src_02_FlexBox/AlignItems";
 import { StatusBar } from 'expo-status-bar';
 import { render } from 'react-dom';
 
