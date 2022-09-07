@@ -26,6 +26,7 @@ export default class index extends Component {
 const styles = StyleSheet.create({
     container:{
         flexDirection:'row',
+        //控制项目是否换行
         flexWrap:'wrap'
     },
     itemBase:{
