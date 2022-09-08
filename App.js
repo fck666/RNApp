@@ -6,7 +6,8 @@ import { StyleSheet, Text, View } from 'react-native';
 // import Index from "./src_02_FlexBox/AlignItems";
 // import Index from './src_03_Dimension/index';
 // import Index from './src_04_alert/index';
-import Index from './src_05_Switch_StatusBar/index';
+// import Index from './src_05_Switch_StatusBar/index';
+import Index from './src_06_ActivityIndicator/index';
 import { StatusBar } from 'expo-status-bar';
 import { render } from 'react-dom';
 
