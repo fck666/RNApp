@@ -8,14 +8,16 @@ import { StyleSheet, Text, View } from 'react-native';
 // import Index from './src_04_alert/index';
 // import Index from './src_05_Switch_StatusBar/index';
 // import Index from './src_06_ActivityIndicator/index';
-import Index from './src_07_Image/index';
+// import Index from './src_07_Image/Images';
+// import Index from './src/index';
+import Text_Input from './src_08_TextInput/text_Input';
 import { StatusBar } from 'expo-status-bar';
 import { render } from 'react-dom';
 
 export default class App extends Component {
   render(){
     return(
-         <Index />
+         <Text_Input />
     )
   }
 }
