@@ -10,14 +10,15 @@ import { StyleSheet, Text, View } from 'react-native';
 // import Index from './src_06_ActivityIndicator/index';
 // import Index from './src_07_Image/Images';
 // import Index from './src/index';
-import Text_Input from './src_08_TextInput/text_Input';
+// import Text_Input from './src_08_TextInput/text_Input';
+import Index from './src_09_Touchable';
 import { StatusBar } from 'expo-status-bar';
 import { render } from 'react-dom';
 
 export default class App extends Component {
   render(){
     return(
-         <Text_Input />
+         <Index />
     )
   }
 }
