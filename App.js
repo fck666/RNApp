@@ -11,7 +11,8 @@ import { StyleSheet, Text, View } from 'react-native';
 // import Index from './src_07_Image/Images';
 // import Index from './src/index';
 // import Text_Input from './src_08_TextInput/text_Input';
-import Index from './src_09_Touchable';
+// import Index from './src_09_Touchable';
+import Index from './src_10_ScrollView';
 import { StatusBar } from 'expo-status-bar';
 import { render } from 'react-dom';
 
